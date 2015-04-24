@@ -6,8 +6,15 @@
 	<dict>
 		<key>MSTwitterSplashScreen.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>MSTwitterSplashScreenExample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -18,6 +25,16 @@
 			<true/>
 		</dict>
 		<key>5252DC991AEA81B700CB29CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5277CBB41AEAB52A001F2E3D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5277CBCC1AEAB52A001F2E3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

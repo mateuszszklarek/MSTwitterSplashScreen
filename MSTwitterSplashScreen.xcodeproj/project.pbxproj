@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		5252DC9B1AEA81B700CB29CE /* libMSTwitterSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252DC8F1AEA81B700CB29CE /* libMSTwitterSplashScreen.a */; };
 		5252DCAE1AEA822500CB29CE /* MSTwitterSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252DCAD1AEA822500CB29CE /* MSTwitterSplashScreen.m */; };
+		5277CBBA1AEAB52A001F2E3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277CBB91AEAB52A001F2E3D /* main.m */; };
+		5277CBBD1AEAB52A001F2E3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277CBBC1AEAB52A001F2E3D /* AppDelegate.m */; };
+		5277CBC01AEAB52A001F2E3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277CBBF1AEAB52A001F2E3D /* ViewController.m */; };
+		5277CBC51AEAB52A001F2E3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5277CBC41AEAB52A001F2E3D /* Images.xcassets */; };
+		5277CBD41AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277CBD31AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.m */; };
+		5277CBE01AEAB6EB001F2E3D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5277CBDE1AEAB6EB001F2E3D /* LaunchScreen.xib */; };
+		5277CBE11AEAB6EB001F2E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5277CBDF1AEAB6EB001F2E3D /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,6 +25,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5252DC8E1AEA81B700CB29CE;
 			remoteInfo = MSTwitterSplashScreen;
+		};
+		5277CBCE1AEAB52A001F2E3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5252DC871AEA81B700CB29CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5277CBB41AEAB52A001F2E3D;
+			remoteInfo = MSTwitterSplashScreenExample;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -39,6 +53,19 @@
 		5252DCA01AEA81B700CB29CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5252DCAC1AEA822500CB29CE /* MSTwitterSplashScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSTwitterSplashScreen.h; sourceTree = "<group>"; };
 		5252DCAD1AEA822500CB29CE /* MSTwitterSplashScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSTwitterSplashScreen.m; sourceTree = "<group>"; };
+		5277CBB51AEAB52A001F2E3D /* MSTwitterSplashScreenExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSTwitterSplashScreenExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5277CBB81AEAB52A001F2E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5277CBB91AEAB52A001F2E3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5277CBBB1AEAB52A001F2E3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5277CBBC1AEAB52A001F2E3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5277CBBE1AEAB52A001F2E3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5277CBBF1AEAB52A001F2E3D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5277CBC41AEAB52A001F2E3D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5277CBCD1AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSTwitterSplashScreenExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5277CBD21AEAB52A001F2E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5277CBD31AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSTwitterSplashScreenExampleTests.m; sourceTree = "<group>"; };
+		5277CBDE1AEAB6EB001F2E3D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		5277CBDF1AEAB6EB001F2E3D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +84,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5277CBB21AEAB52A001F2E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5277CBCA1AEAB52A001F2E3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				5252DC911AEA81B700CB29CE /* MSTwitterSplashScreen */,
+				5277CBB61AEAB52A001F2E3D /* MSTwitterSplashScreenExample */,
+				5277CBD01AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests */,
 				5252DC9E1AEA81B700CB29CE /* MSTwitterSplashScreenTests */,
 				5252DC901AEA81B700CB29CE /* Products */,
 			);
@@ -74,6 +117,8 @@
 			children = (
 				5252DC8F1AEA81B700CB29CE /* libMSTwitterSplashScreen.a */,
 				5252DC9A1AEA81B700CB29CE /* MSTwitterSplashScreenTests.xctest */,
+				5277CBB51AEAB52A001F2E3D /* MSTwitterSplashScreenExample.app */,
+				5277CBCD1AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +146,71 @@
 				5252DCA01AEA81B700CB29CE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5277CBB61AEAB52A001F2E3D /* MSTwitterSplashScreenExample */ = {
+			isa = PBXGroup;
+			children = (
+				5277CBDB1AEAB5AB001F2E3D /* Application */,
+				5277CBDC1AEAB5BA001F2E3D /* Resources */,
+				5277CBB71AEAB52A001F2E3D /* Supporting Files */,
+				5277CBDD1AEAB5CE001F2E3D /* UI */,
+			);
+			path = MSTwitterSplashScreenExample;
+			sourceTree = "<group>";
+		};
+		5277CBB71AEAB52A001F2E3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5277CBB81AEAB52A001F2E3D /* Info.plist */,
+				5277CBB91AEAB52A001F2E3D /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5277CBD01AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				5277CBD31AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.m */,
+				5277CBD11AEAB52A001F2E3D /* Supporting Files */,
+			);
+			path = MSTwitterSplashScreenExampleTests;
+			sourceTree = "<group>";
+		};
+		5277CBD11AEAB52A001F2E3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5277CBD21AEAB52A001F2E3D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5277CBDB1AEAB5AB001F2E3D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5277CBBB1AEAB52A001F2E3D /* AppDelegate.h */,
+				5277CBBC1AEAB52A001F2E3D /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		5277CBDC1AEAB5BA001F2E3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5277CBC41AEAB52A001F2E3D /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5277CBDD1AEAB5CE001F2E3D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5277CBDE1AEAB6EB001F2E3D /* LaunchScreen.xib */,
+				5277CBDF1AEAB6EB001F2E3D /* Main.storyboard */,
+				5277CBBE1AEAB52A001F2E3D /* ViewController.h */,
+				5277CBBF1AEAB52A001F2E3D /* ViewController.m */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +251,41 @@
 			productReference = 5252DC9A1AEA81B700CB29CE /* MSTwitterSplashScreenTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5277CBB41AEAB52A001F2E3D /* MSTwitterSplashScreenExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5277CBD91AEAB52A001F2E3D /* Build configuration list for PBXNativeTarget "MSTwitterSplashScreenExample" */;
+			buildPhases = (
+				5277CBB11AEAB52A001F2E3D /* Sources */,
+				5277CBB21AEAB52A001F2E3D /* Frameworks */,
+				5277CBB31AEAB52A001F2E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSTwitterSplashScreenExample;
+			productName = MSTwitterSplashScreenExample;
+			productReference = 5277CBB51AEAB52A001F2E3D /* MSTwitterSplashScreenExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5277CBCC1AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5277CBDA1AEAB52A001F2E3D /* Build configuration list for PBXNativeTarget "MSTwitterSplashScreenExampleTests" */;
+			buildPhases = (
+				5277CBC91AEAB52A001F2E3D /* Sources */,
+				5277CBCA1AEAB52A001F2E3D /* Frameworks */,
+				5277CBCB1AEAB52A001F2E3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5277CBCF1AEAB52A001F2E3D /* PBXTargetDependency */,
+			);
+			name = MSTwitterSplashScreenExampleTests;
+			productName = MSTwitterSplashScreenExampleTests;
+			productReference = 5277CBCD1AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -156,6 +301,13 @@
 					5252DC991AEA81B700CB29CE = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
+					5277CBB41AEAB52A001F2E3D = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					5277CBCC1AEAB52A001F2E3D = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 5277CBB41AEAB52A001F2E3D;
+					};
 				};
 			};
 			buildConfigurationList = 5252DC8A1AEA81B700CB29CE /* Build configuration list for PBXProject "MSTwitterSplashScreen" */;
@@ -164,6 +316,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5252DC861AEA81B700CB29CE;
 			productRefGroup = 5252DC901AEA81B700CB29CE /* Products */;
@@ -172,12 +325,31 @@
 			targets = (
 				5252DC8E1AEA81B700CB29CE /* MSTwitterSplashScreen */,
 				5252DC991AEA81B700CB29CE /* MSTwitterSplashScreenTests */,
+				5277CBB41AEAB52A001F2E3D /* MSTwitterSplashScreenExample */,
+				5277CBCC1AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5252DC981AEA81B700CB29CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5277CBB31AEAB52A001F2E3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5277CBE01AEAB6EB001F2E3D /* LaunchScreen.xib in Resources */,
+				5277CBE11AEAB6EB001F2E3D /* Main.storyboard in Resources */,
+				5277CBC51AEAB52A001F2E3D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5277CBCB1AEAB52A001F2E3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,6 +374,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5277CBB11AEAB52A001F2E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5277CBC01AEAB52A001F2E3D /* ViewController.m in Sources */,
+				5277CBBD1AEAB52A001F2E3D /* AppDelegate.m in Sources */,
+				5277CBBA1AEAB52A001F2E3D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5277CBC91AEAB52A001F2E3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5277CBD41AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -209,6 +399,11 @@
 			isa = PBXTargetDependency;
 			target = 5252DC8E1AEA81B700CB29CE /* MSTwitterSplashScreen */;
 			targetProxy = 5252DC9C1AEA81B700CB29CE /* PBXContainerItemProxy */;
+		};
+		5277CBCF1AEAB52A001F2E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5277CBB41AEAB52A001F2E3D /* MSTwitterSplashScreenExample */;
+			targetProxy = 5277CBCE1AEAB52A001F2E3D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -341,6 +536,66 @@
 			};
 			name = Release;
 		};
+		5277CBD51AEAB52A001F2E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MSTwitterSplashScreenExample/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5277CBD61AEAB52A001F2E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/MSTwitterSplashScreenExample/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5277CBD71AEAB52A001F2E3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MSTwitterSplashScreenExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSTwitterSplashScreenExample.app/MSTwitterSplashScreenExample";
+			};
+			name = Debug;
+		};
+		5277CBD81AEAB52A001F2E3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MSTwitterSplashScreenExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSTwitterSplashScreenExample.app/MSTwitterSplashScreenExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -360,12 +615,30 @@
 				5252DCA51AEA81B700CB29CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5252DCA61AEA81B700CB29CE /* Build configuration list for PBXNativeTarget "MSTwitterSplashScreenTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5252DCA71AEA81B700CB29CE /* Debug */,
 				5252DCA81AEA81B700CB29CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5277CBD91AEAB52A001F2E3D /* Build configuration list for PBXNativeTarget "MSTwitterSplashScreenExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5277CBD51AEAB52A001F2E3D /* Debug */,
+				5277CBD61AEAB52A001F2E3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5277CBDA1AEAB52A001F2E3D /* Build configuration list for PBXNativeTarget "MSTwitterSplashScreenExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5277CBD71AEAB52A001F2E3D /* Debug */,
+				5277CBD81AEAB52A001F2E3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
