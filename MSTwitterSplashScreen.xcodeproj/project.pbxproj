@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5245ADB11AEB1661007A2DA1 /* UIBezierPath+LogoShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 5245ADB01AEB1661007A2DA1 /* UIBezierPath+LogoShape.m */; };
+		5245ADB31AEB1802007A2DA1 /* twitterscreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5245ADB21AEB1802007A2DA1 /* twitterscreen.jpg */; };
 		5252DC9B1AEA81B700CB29CE /* libMSTwitterSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252DC8F1AEA81B700CB29CE /* libMSTwitterSplashScreen.a */; };
 		5252DCAE1AEA822500CB29CE /* MSTwitterSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252DCAD1AEA822500CB29CE /* MSTwitterSplashScreen.m */; };
 		5277CBBA1AEAB52A001F2E3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277CBB91AEAB52A001F2E3D /* main.m */; };
 		5277CBBD1AEAB52A001F2E3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277CBBC1AEAB52A001F2E3D /* AppDelegate.m */; };
-		5277CBC01AEAB52A001F2E3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277CBBF1AEAB52A001F2E3D /* ViewController.m */; };
+		5277CBC01AEAB52A001F2E3D /* MSTwitterSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277CBBF1AEAB52A001F2E3D /* MSTwitterSplashViewController.m */; };
 		5277CBC51AEAB52A001F2E3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5277CBC41AEAB52A001F2E3D /* Images.xcassets */; };
 		5277CBD41AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5277CBD31AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.m */; };
 		5277CBE01AEAB6EB001F2E3D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5277CBDE1AEAB6EB001F2E3D /* LaunchScreen.xib */; };
 		5277CBE11AEAB6EB001F2E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5277CBDF1AEAB6EB001F2E3D /* Main.storyboard */; };
+		5277CBE61AEAE0C3001F2E3D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5277CBE51AEAE0C3001F2E3D /* CoreGraphics.framework */; };
+		5277CBE81AEAE0CD001F2E3D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5277CBE71AEAE0CD001F2E3D /* UIKit.framework */; };
+		5277CBEA1AEAE0D8001F2E3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5277CBE91AEAE0D8001F2E3D /* Foundation.framework */; };
+		5277CBEC1AEAE1D5001F2E3D /* libMSTwitterSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5252DC8F1AEA81B700CB29CE /* libMSTwitterSplashScreen.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5245ADAF1AEB1661007A2DA1 /* UIBezierPath+LogoShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+LogoShape.h"; sourceTree = "<group>"; };
+		5245ADB01AEB1661007A2DA1 /* UIBezierPath+LogoShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+LogoShape.m"; sourceTree = "<group>"; };
+		5245ADB21AEB1802007A2DA1 /* twitterscreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twitterscreen.jpg; sourceTree = "<group>"; };
 		5252DC8F1AEA81B700CB29CE /* libMSTwitterSplashScreen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMSTwitterSplashScreen.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5252DC9A1AEA81B700CB29CE /* MSTwitterSplashScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSTwitterSplashScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5252DCA01AEA81B700CB29CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,14 +67,17 @@
 		5277CBB91AEAB52A001F2E3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5277CBBB1AEAB52A001F2E3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5277CBBC1AEAB52A001F2E3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5277CBBE1AEAB52A001F2E3D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5277CBBF1AEAB52A001F2E3D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5277CBBE1AEAB52A001F2E3D /* MSTwitterSplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSTwitterSplashViewController.h; sourceTree = "<group>"; };
+		5277CBBF1AEAB52A001F2E3D /* MSTwitterSplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSTwitterSplashViewController.m; sourceTree = "<group>"; };
 		5277CBC41AEAB52A001F2E3D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5277CBCD1AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MSTwitterSplashScreenExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5277CBD21AEAB52A001F2E3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5277CBD31AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSTwitterSplashScreenExampleTests.m; sourceTree = "<group>"; };
 		5277CBDE1AEAB6EB001F2E3D /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		5277CBDF1AEAB6EB001F2E3D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5277CBE51AEAE0C3001F2E3D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5277CBE71AEAE0CD001F2E3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5277CBE91AEAE0D8001F2E3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5277CBEC1AEAE1D5001F2E3D /* libMSTwitterSplashScreen.a in Frameworks */,
+				5277CBEA1AEAE0D8001F2E3D /* Foundation.framework in Frameworks */,
+				5277CBE81AEAE0CD001F2E3D /* UIKit.framework in Frameworks */,
+				5277CBE61AEAE0C3001F2E3D /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +125,7 @@
 				5277CBD01AEAB52A001F2E3D /* MSTwitterSplashScreenExampleTests */,
 				5252DC9E1AEA81B700CB29CE /* MSTwitterSplashScreenTests */,
 				5252DC901AEA81B700CB29CE /* Products */,
+				5277CBEB1AEAE105001F2E3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +214,7 @@
 		5277CBDC1AEAB5BA001F2E3D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5245ADB21AEB1802007A2DA1 /* twitterscreen.jpg */,
 				5277CBC41AEAB52A001F2E3D /* Images.xcassets */,
 			);
 			path = Resources;
@@ -207,10 +225,22 @@
 			children = (
 				5277CBDE1AEAB6EB001F2E3D /* LaunchScreen.xib */,
 				5277CBDF1AEAB6EB001F2E3D /* Main.storyboard */,
-				5277CBBE1AEAB52A001F2E3D /* ViewController.h */,
-				5277CBBF1AEAB52A001F2E3D /* ViewController.m */,
+				5277CBBE1AEAB52A001F2E3D /* MSTwitterSplashViewController.h */,
+				5277CBBF1AEAB52A001F2E3D /* MSTwitterSplashViewController.m */,
+				5245ADAF1AEB1661007A2DA1 /* UIBezierPath+LogoShape.h */,
+				5245ADB01AEB1661007A2DA1 /* UIBezierPath+LogoShape.m */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		5277CBEB1AEAE105001F2E3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5277CBE91AEAE0D8001F2E3D /* Foundation.framework */,
+				5277CBE71AEAE0CD001F2E3D /* UIKit.framework */,
+				5277CBE51AEAE0C3001F2E3D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +376,7 @@
 				5277CBE01AEAB6EB001F2E3D /* LaunchScreen.xib in Resources */,
 				5277CBE11AEAB6EB001F2E3D /* Main.storyboard in Resources */,
 				5277CBC51AEAB52A001F2E3D /* Images.xcassets in Resources */,
+				5245ADB31AEB1802007A2DA1 /* twitterscreen.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +409,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5277CBC01AEAB52A001F2E3D /* ViewController.m in Sources */,
+				5245ADB11AEB1661007A2DA1 /* UIBezierPath+LogoShape.m in Sources */,
+				5277CBC01AEAB52A001F2E3D /* MSTwitterSplashViewController.m in Sources */,
 				5277CBBD1AEAB52A001F2E3D /* AppDelegate.m in Sources */,
 				5277CBBA1AEAB52A001F2E3D /* main.m in Sources */,
 			);
@@ -633,6 +665,7 @@
 				5277CBD61AEAB52A001F2E3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5277CBDA1AEAB52A001F2E3D /* Build configuration list for PBXNativeTarget "MSTwitterSplashScreenExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -641,6 +674,7 @@
 				5277CBD81AEAB52A001F2E3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
