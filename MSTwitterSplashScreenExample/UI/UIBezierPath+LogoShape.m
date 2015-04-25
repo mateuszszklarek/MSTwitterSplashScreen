@@ -12,7 +12,7 @@
 
 + (instancetype) logoShape
 {
-    UIBezierPath* bezierPath = [UIBezierPath bezierPath];
+    UIBezierPath *bezierPath = [UIBezierPath bezierPath];
     [bezierPath moveToPoint: CGPointMake(22.05, 56.63)];
     [bezierPath addCurveToPoint: CGPointMake(34.23, 54.93) controlPoint1: CGPointMake(26.32, 56.63) controlPoint2: CGPointMake(30.38, 56.06)];
     [bezierPath addCurveToPoint: CGPointMake(44.42, 50.27) controlPoint1: CGPointMake(38.08, 53.8) controlPoint2: CGPointMake(41.48, 52.25)];
