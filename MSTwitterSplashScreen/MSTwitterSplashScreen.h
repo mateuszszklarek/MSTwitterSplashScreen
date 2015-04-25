@@ -6,8 +6,16 @@
 //  Copyright (c) 2015 Mateusz Szklarek. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface MSTwitterSplashScreen : NSObject
+@interface MSTwitterSplashScreen : UIView
+
+@property (nonatomic, assign) CGFloat durationAnimation;
+
+- (instancetype)initSplashScreenWithBezierPath:(UIBezierPath *)bezierPath
+                               backgroundColor:(UIColor *)backgroundColor
+                                     logoColor:(UIColor *)logoColor;
+
+- (void)startAnimation;
 
 @end
