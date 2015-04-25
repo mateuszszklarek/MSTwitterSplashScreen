@@ -10,8 +10,8 @@
 
 @interface MSTwitterSplashScreen()
 
-@property (strong, nonatomic) CAShapeLayer *logoLayer;
 @property (strong, nonatomic) UIColor *backgroundSplashScreenColor;
+@property (strong, nonatomic) CAShapeLayer *logoLayer;
 @property (strong, nonatomic) CAAnimation *logoAnimation;
 
 @end
@@ -56,14 +56,8 @@
 
 - (void)startAnimation
 {
-    [self cleanAllAnimations];
     [self.logoLayer addAnimation:self.logoAnimation forKey:@"MSTwitterSplashScreenAnimation"];
     [self performSelector:@selector(setBackgroundColor:) withObject:[UIColor clearColor] afterDelay:self.durationAnimation * 0.45];
-}
-
-- (void)cleanAllAnimations
-{
-    [self.logoLayer removeAllAnimations];
 }
 
 - (CGFloat)durationAnimation
