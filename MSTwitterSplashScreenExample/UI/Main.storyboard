@@ -7,7 +7,7 @@
         <!--Twitter Splash View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="TwitterSplashViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="MSTwitterSplashViewController" sceneMemberID="viewController">
                     <containerView key="view" opaque="NO" contentMode="scaleToFill" id="NSj-fU-PC8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -23,7 +23,6 @@
         <!--View Controller-->
         <scene sceneID="4Dh-QZ-HBJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ce-DC-rwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController wantsFullScreenLayout="YES" id="e6I-hw-Wv5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KhV-MS-OdE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -37,6 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ce-DC-rwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="377" y="300"/>
         </scene>
