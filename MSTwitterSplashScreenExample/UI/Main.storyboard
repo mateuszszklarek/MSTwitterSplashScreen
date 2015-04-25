@@ -12,13 +12,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <connections>
-                            <segue destination="e6I-hw-Wv5" kind="embed" id="heA-PH-rfg"/>
+                            <segue destination="e6I-hw-Wv5" kind="embed" id="E9q-U1-LqA"/>
                         </connections>
                     </containerView>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="300"/>
+            <point key="canvasLocation" x="-28" y="299.99999999999994"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4Dh-QZ-HBJ">
@@ -28,7 +28,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterscreen.jpg" id="RDA-pl-R8r">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterscreen.jpg" id="P94-A8-oxY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ce-DC-rwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="300"/>
+            <point key="canvasLocation" x="382" y="299"/>
         </scene>
     </scenes>
     <resources>
