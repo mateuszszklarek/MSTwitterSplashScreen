@@ -26,21 +26,11 @@ Pod::Spec.new do |s|
   #s.exclude_files = "Classes/Exclude"
   s.public_header_files = "Classes/**/*.h"
 
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
-  # s.framework  = 'CBZSplashView'
+  s.framework  = 'CBZSplashView'
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-
-
-  
   s.requires_arc = true
 
 end
