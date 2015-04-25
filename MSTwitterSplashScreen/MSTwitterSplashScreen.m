@@ -10,6 +10,7 @@
 
 @interface MSTwitterSplashScreen()
 
+@property (nonatomic, copy) void(^animationCompletionHandler)();
 @property (strong, nonatomic) UIColor *backgroundSplashScreenColor;
 @property (strong, nonatomic) CAShapeLayer *logoLayer;
 @property (strong, nonatomic) CAAnimation *logoAnimation;
@@ -56,9 +57,25 @@
 
 - (void)startAnimation
 {
+    [self startAnimationWithCompletionHandler:nil];
+}
+
+- (void)startAnimationWithCompletionHandler:(void (^)())completionHandler
+{
+    self.animationCompletionHandler = completionHandler;
+    self.logoAnimation.delegate = self;
     [self.logoLayer addAnimation:self.logoAnimation forKey:@"MSTwitterSplashScreenAnimation"];
     [self performSelector:@selector(setBackgroundColor:) withObject:[UIColor clearColor] afterDelay:self.durationAnimation * 0.45];
 }
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    if (self.animationCompletionHandler) {
+        self.animationCompletionHandler();
+    }
+    [self removeFromSuperview];
+}
+
 
 - (CGFloat)durationAnimation
 {
