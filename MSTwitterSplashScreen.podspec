@@ -9,15 +9,15 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/szklarekmateusz"
   s.platform     = :ios, '7.0'
   #s.ios.deployment_target = "7.0"
-  s.source_files  = 'MSTwitterSplashScreen', '*.{h,m}' "MSTwitterSplashScreen/**/*.{h,m}"
-  #s.source_files  = 'MSTwitterSplashScreen'
+  s.source       = { :git => 'https://github.com/mateuszszklarek/MSTwitterSplashScreen', :tag => 'v1.0.0' }
+  s.source_files  = 'MSTwitterSplashScreen'
+
+  #s.source_files  = 'MSTwitterSplashScreen', '*.{h,m}' "MSTwitterSplashScreen/**/*.{h,m}"
+  
   
   #s.source_files  = "MSTwitterSplashScreen", "MSTwitterSplashScreen/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
   #s.public_header_files = "Classes/**/*.h"
-
-  #s.framework  = 'CBZSplashView'
-  # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
