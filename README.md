@@ -22,17 +22,23 @@ The repository allows you to achieve the effect similar to one that you’ve pro
 ## How to use it?
 
 ###Import `MSTwitterSplashScreen` to your ViewController.m
+
 ```obj-c 
 <MSTwitterSplashScreen/MSTwitterSplashScreen.h>
 ```
+
 ###Create property in interface ViewController.m
+
 ```obj-c
 @property (strong, nonatomic) MSTwitterSplashScreen *splashScreen;
 ```
+
 ###Create object of class `MSTwitterSplashScreen`
+
 ```obj-c 
 MSTwitterSplashScreen *splashScreen = ...
 ```
+
 ### and initialize the created object via public constructor 
 
 You need to provide 3 parameters:
