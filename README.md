@@ -19,7 +19,6 @@ The repository allows you to achieve the effect similar to one that you’ve pro
 
 * Bézier curve of your logo (if you don’t know how to create it, feel free to let me know)
 
-<img src="Images/Screenshot.jpg"height="100%" width="100%"/>
 ## How to use it?
 
 ###Import `MSTwitterSplashScreen` to your ViewController.m
