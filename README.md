@@ -36,7 +36,7 @@ The repository allows you to achieve the effect similar to one that you’ve pro
 ###Create object of class `MSTwitterSplashScreen`
 
 ```obj-c 
-MSTwitterSplashScreen *splashScreen = ...
+MSTwitterSplashScreen *twitterSplashScreen = ...
 ```
 
 ### and initialize the created object via public constructor 
