@@ -36,9 +36,20 @@ CGFloat const sizeScale = .2f;
     return self;
 }
 
-- (CAShapeLayer *)drawShapeLayerFromBezierPath:(UIBezierPath *)bezierPath
+- (instancetype)initSplashScreenWithBezierPath:(UIBezierPath *)bezierPath
+                backgroundWithGradientFromTopColor:(UIColor *)topColor
+                                   bottomColor:(UIColor *)bottomColor
+                                     logoColor:(UIColor *)logoColor
 {
-    CGRect shapeBounds = CGRectInset(self.bounds, -CGRectGetWidth(self.bounds), - CGRectGetHeight(self.bounds));
+    self = [super initWithFrame:[[UIScreen mainScreen] bounds]];
+    if (self) {
+        _gradientLayer = [self drawShapeLayerBezierPath:bezierPath withGradientFromTopColor:topColor bottomColor:bottomColor];
+        [self.layer addSublayer:_gradientLayer];
+        self.backgroundColor = logoColor;
+    }
+    return self;
+}
+
 - (CAGradientLayer *)drawShapeLayerBezierPath:(UIBezierPath *)bezierPath withGradientFromTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor
 {
     CGRect layerRectBounds = CGRectInset(self.bounds, -CGRectGetWidth(self.bounds) * sizeScale, -CGRectGetHeight(self.bounds) * sizeScale);

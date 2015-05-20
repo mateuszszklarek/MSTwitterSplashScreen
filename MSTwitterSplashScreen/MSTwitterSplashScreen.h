@@ -16,6 +16,11 @@
                                backgroundColor:(UIColor *)backgroundColor
                                      logoColor:(UIColor *)logoColor;
 
+- (instancetype)initSplashScreenWithBezierPath:(UIBezierPath *)bezierPath
+            backgroundWithGradientFromTopColor:(UIColor *)topColor
+                                   bottomColor:(UIColor *)bottomColor
+                                     logoColor:(UIColor *)logoColor;
+
 - (void)startAnimation;
 
 @end
