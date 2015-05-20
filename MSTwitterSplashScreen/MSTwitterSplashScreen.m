@@ -12,12 +12,15 @@
 
 @property (nonatomic, copy) void(^animationCompletionHandler)();
 @property (strong, nonatomic) UIColor *backgroundSplashScreenColor;
-@property (strong, nonatomic) CAShapeLayer *logoLayer;
 @property (strong, nonatomic) CAAnimation *logoAnimation;
+@property (strong, nonatomic) CAShapeLayer *logoLayer;
+@property (strong, nonatomic) CAGradientLayer *gradientLayer;
 
 @end
 
 @implementation MSTwitterSplashScreen
+
+CGFloat const sizeScale = .2f;
 
 - (instancetype)initSplashScreenWithBezierPath:(UIBezierPath *)bezierPath
                                backgroundColor:(UIColor *)backgroundColor
@@ -36,7 +39,33 @@
 - (CAShapeLayer *)drawShapeLayerFromBezierPath:(UIBezierPath *)bezierPath
 {
     CGRect shapeBounds = CGRectInset(self.bounds, -CGRectGetWidth(self.bounds), - CGRectGetHeight(self.bounds));
+- (CAGradientLayer *)drawShapeLayerBezierPath:(UIBezierPath *)bezierPath withGradientFromTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor
+{
+    CGRect layerRectBounds = CGRectInset(self.bounds, -CGRectGetWidth(self.bounds) * sizeScale, -CGRectGetHeight(self.bounds) * sizeScale);
     
+    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer.frame = layerRectBounds;
+    gradientLayer.anchorPoint = CGPointMake(0.5f, 0.5f);
+    
+    gradientLayer.colors = [NSArray arrayWithObjects:(id)[topColor CGColor], (id)[bottomColor CGColor], nil];
+
+    CGMutablePathRef logoPath = CGPathCreateMutable();
+    CGPathAddRect(logoPath, nil, layerRectBounds);
+    
+    CGPoint logoLocation = CGPointMake((CGRectGetWidth(self.bounds) - CGRectGetWidth(bezierPath.bounds))/2,
+                                       (CGRectGetHeight(self.bounds) - CGRectGetHeight(bezierPath.bounds))/2);
+    CGAffineTransform logoTransform = CGAffineTransformMakeTranslation(logoLocation.x, logoLocation.y);
+    CGPathAddPath(logoPath, &logoTransform, bezierPath.CGPath);
+
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.bounds = layerRectBounds;
+    shapeLayer.path = logoPath;
+    shapeLayer.anchorPoint = CGPointZero;
+
+    gradientLayer.mask = shapeLayer;
+
+    return gradientLayer;
+}
     CGMutablePathRef mutablePath = CGPathCreateMutable();
     CGPathAddRect(mutablePath, nil, shapeBounds);
     
