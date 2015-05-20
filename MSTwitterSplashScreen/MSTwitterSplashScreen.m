@@ -104,7 +104,7 @@ CGFloat const sizeScale = .2f;
 {
     self.animationCompletionHandler = completionHandler;
     self.logoAnimation.delegate = self;
-    [self.logoLayer addAnimation:self.logoAnimation forKey:@"MSTwitterSplashScreenAnimation"];
+    [self.gradientLayer addAnimation:self.logoAnimation forKey:nil];
     [self performSelector:@selector(setBackgroundColor:) withObject:[UIColor clearColor] afterDelay:self.durationAnimation * 0.45];
 }
 
