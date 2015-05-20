@@ -21,15 +21,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     UIColor *backgroundColor = [UIColor colorWithRed:0.275 green:0.604 blue:0.915 alpha:1.000];
+    UIColor *topColor = [UIColor colorWithRed:0.683 green:0.808 blue:0.998 alpha:1.000];
+    UIColor *bottomColor = [UIColor colorWithRed:0.088 green:0.410 blue:0.997 alpha:1.000];
+    
     UIColor *logoColor = [UIColor whiteColor];
     UIBezierPath *bezierPath = [UIBezierPath logoShape];
+    
     MSTwitterSplashScreen *splashScreen = [[MSTwitterSplashScreen alloc] initSplashScreenWithBezierPath:bezierPath
-                                                                                        backgroundColor:backgroundColor
+                                                                     backgroundWithGradientFromTopColor:topColor
+                                                                                            bottomColor:bottomColor
                                                                                               logoColor:logoColor];
     splashScreen.durationAnimation = 1.8;
-    [self.view addSubview:splashScreen];
+
     self.twitterSplashScreen = splashScreen;
+    [self.view addSubview:self.twitterSplashScreen];
 }
 
 - (void)viewDidAppear:(BOOL)animated
