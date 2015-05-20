@@ -77,9 +77,14 @@ CGFloat const sizeScale = .2f;
 
     return gradientLayer;
 }
+
+- (CAShapeLayer *)drawShapeLayerFromBezierPath:(UIBezierPath *)bezierPath
+{
+    CGRect shapeBounds = CGRectInset(self.bounds, -CGRectGetWidth(self.bounds), -CGRectGetHeight(self.bounds));
+
     CGMutablePathRef mutablePath = CGPathCreateMutable();
     CGPathAddRect(mutablePath, nil, shapeBounds);
-    
+
     CGPoint logoLocation = CGPointMake((CGRectGetWidth(self.bounds) - CGRectGetWidth(bezierPath.bounds))/2,
                                        (CGRectGetHeight(self.bounds) - CGRectGetHeight(bezierPath.bounds)) /2);
     CGAffineTransform logoTransform = CGAffineTransformMakeTranslation(logoLocation.x, logoLocation.y);
@@ -90,8 +95,7 @@ CGFloat const sizeScale = .2f;
     shapeLayer.path = mutablePath;
     shapeLayer.anchorPoint = CGPointMake(0.5, 0.5);
     shapeLayer.fillColor = self.backgroundSplashScreenColor.CGColor;
-    
-    CGPathRelease(mutablePath);
+
     return shapeLayer;
 }
 
@@ -115,7 +119,6 @@ CGFloat const sizeScale = .2f;
     }
     [self removeFromSuperview];
 }
-
 
 - (CGFloat)durationAnimation
 {
