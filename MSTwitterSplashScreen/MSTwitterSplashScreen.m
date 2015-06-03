@@ -12,13 +12,13 @@
 
 @property(nonatomic, copy) void(^animationCompletionHandler)();
 @property(strong, nonatomic) CAAnimation *logoAnimation;
-@property(strong, nonatomic) CALayer *theLayer;
+@property(strong, nonatomic) CALayer *gradientLayer;
 
 @end
 
 @implementation MSTwitterSplashScreen
 
-static CGFloat const sizeScale = .5f;
+static CGFloat const sizeScale = .2f;
 
 - (instancetype)initSplashScreenWithBezierPath:(UIBezierPath *)bezierPath
                                backgroundColor:(UIColor *)backgroundColor
@@ -38,12 +38,12 @@ static CGFloat const sizeScale = .5f;
     self = [super initWithFrame:[[UIScreen mainScreen] bounds]];
     if (self) {
         if ([topColor isEqual:bottomColor]) {
-            _theLayer = [self createLayerWithLogoFromBezierPath:bezierPath withBackgroundColor:topColor];
+            _gradientLayer = [self configureLayerWithLogoFromBezierPath:bezierPath withGradientFromTopColor:topColor bottomColor:topColor];
         }
         else {
-            _theLayer = [self createLayerWithLogoFromBezierPath:bezierPath withGradientFromTopColor:topColor bottomColor:bottomColor];
+            _gradientLayer = [self configureLayerWithLogoFromBezierPath:bezierPath withGradientFromTopColor:topColor bottomColor:bottomColor];
         }
-        [self.layer addSublayer:_theLayer];
+        [self.layer addSublayer:_gradientLayer];
         self.backgroundColor = logoColor;
     }
     return self;
@@ -54,16 +54,6 @@ static CGFloat const sizeScale = .5f;
 - (CGRect)layerSizeRect
 {
     return CGRectInset(self.bounds, -CGRectGetWidth(self.bounds) * sizeScale, -CGRectGetHeight(self.bounds) * sizeScale);
-}
-
-- (CAShapeLayer *)shapeLayer
-{
-    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    shapeLayer.bounds = [self layerSizeRect];
-    shapeLayer.path = [self mutableLogoPath];
-    shapeLayer.anchorPoint = CGPointZero;
-
-    return shapeLayer;
 }
 
 - (CGMutablePathRef)mutableLogoPath
@@ -92,26 +82,6 @@ static CGFloat const sizeScale = .5f;
     return shapeLayer;
 }
 
-#pragma mark - Layer
-
-- (CAShapeLayer *)createLayerWithBackgroundColor:(UIColor *)backgroundColor
-{
-    CAShapeLayer *backgroundLayer = [CAShapeLayer layer];
-    backgroundLayer.frame = [self layerSizeRect];
-    backgroundLayer.anchorPoint = CGPointMake(0.5f, 0.5f);
-    backgroundLayer.path = [self mutableLogoPath];
-    backgroundLayer.fillColor = backgroundColor.CGColor;
-    return backgroundLayer;
-}
-
-- (CAShapeLayer *)createLayerWithLogoFromBezierPath:(UIBezierPath *)bezierPath withBackgroundColor:(UIColor *)backgroundColor
-{
-    CAShapeLayer *shapeLayer = [self createLayerWithBackgroundColor:backgroundColor];
-    CAShapeLayer *logoLayer = [self getLayerFromBezierPath:bezierPath];
-    shapeLayer.mask = logoLayer;
-    return shapeLayer;
-}
-
 #pragma mark - Layer with gradient
 
 - (CAGradientLayer *)createGradientLayerWithGradientFromTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor
@@ -124,7 +94,7 @@ static CGFloat const sizeScale = .5f;
     return gradientLayer;
 }
 
-- (CAGradientLayer *)createLayerWithLogoFromBezierPath:(UIBezierPath *)bezierPath withGradientFromTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor
+- (CAGradientLayer *)configureLayerWithLogoFromBezierPath:(UIBezierPath *)bezierPath withGradientFromTopColor:(UIColor *)topColor bottomColor:(UIColor *)bottomColor
 {
     CAGradientLayer *gradientLayer = [self createGradientLayerWithGradientFromTopColor:topColor bottomColor:bottomColor];
     CAShapeLayer *shapeLayer = [self getLayerFromBezierPath:bezierPath];
@@ -143,7 +113,7 @@ static CGFloat const sizeScale = .5f;
 {
     self.animationCompletionHandler = completionHandler;
     self.logoAnimation.delegate = self;
-    [self.theLayer addAnimation:self.logoAnimation forKey:nil];
+    [self.gradientLayer addAnimation:self.logoAnimation forKey:nil];
     [self performSelector:@selector(setBackgroundColor:) withObject:[UIColor clearColor] afterDelay:self.durationAnimation * 0.45];
 }
 
