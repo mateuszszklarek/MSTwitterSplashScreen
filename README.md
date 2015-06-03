@@ -1,6 +1,7 @@
 ## MSTwitterSplashScreen for iOS
 
-<img src="Images/TwitterAnimation.gif"height="50%" width="50%"/>
+<img src = "Images/TwitterAnimation.gif" width = "40%" height = "40%"/>
+<img src="Images/TwitterSplashWithGradient.gif" width = "55%" height = "55%"/>
 
 **Twitter: <a href="https://twitter.com/SzklarekMateusz">@SzklarekMateusz</a>**
 **Linkedin: <a href="https://www.linkedin.com/in/mateuszszklarek">Mateusz Szklarek</a>**
@@ -14,6 +15,7 @@ The repository allows you to achieve the effect similar to one that you’ve pro
 * Same size of logo among all iPhone models(4/4S,5/5S/5C,6/6+)
 * Custom background and logo color
 * Custom duration time of animation
+* **Added possibility to create background with gradient!**
 
 **All you need is:**
 
@@ -45,7 +47,7 @@ You need to provide 3 parameters:
 
 `bézierPath`
 
-`backgroundColor`
+`backgroundColor` or `topColor` and `bottomColor` for background with gradient
 
 `logoColor`
 
@@ -79,11 +81,19 @@ self.splashScreen = splashScreen;
 
 ##How to install
 
-You can integrate `MSTwitterSplashScreen` with your project using Cocoapods. Add the following line to your `*.podfile`
+You can integrate `MSTwitterSplashScreen` with your project using Cocoapods. Add the following line to your `*.podfile`. I recommend you to use the latest version which is still being developed.
+
+For most recent or development version:
 
 ```obj-c
 pod 'MSTwitterSplashScreen', :git => 'https://github.com/mateuszszklarek/MSTwitterSplashScreen'
 ```
+For specific version:
+
+```obj-c
+pod 'MSTwitterSplashScreen', :git => 'https://github.com/mateuszszklarek/MSTwitterSplashScreen', :tag => 'v1.0.4'
+```
+
 ##Inspired by
 
 Pod is a simple modification of an existing pod `CBZSplashView` which I needed for one of my ongoing projects. Thanks a lot to [Callum Boddy](https://github.com/callumboddy) for giving me a possibility to modify his pod.
