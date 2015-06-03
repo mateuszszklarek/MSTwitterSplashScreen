@@ -1,4 +1,4 @@
-## MSTwitterSplashScreen for iOS
+## MSTwitterSplashScreen for iOS App
 
 <img src = "Images/TwitterAnimation.gif" width = "40%" height = "40%"/>
 <img src="Images/TwitterSplashWithGradient.gif" width = "55%" height = "55%"/>
