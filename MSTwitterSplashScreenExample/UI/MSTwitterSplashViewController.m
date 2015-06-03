@@ -29,10 +29,16 @@
     UIColor *logoColor = [UIColor whiteColor];
     UIBezierPath *bezierPath = [UIBezierPath logoShape];
     
+    //For layer with gradient from two colors
     MSTwitterSplashScreen *splashScreen = [[MSTwitterSplashScreen alloc] initSplashScreenWithBezierPath:bezierPath
                                                                      backgroundWithGradientFromTopColor:topColor
                                                                                             bottomColor:bottomColor
                                                                                               logoColor:logoColor];
+    
+    //For layer with background color
+//    MSTwitterSplashScreen *splashScreen = [[MSTwitterSplashScreen alloc] initSplashScreenWithBezierPath:bezierPath
+//                                                                                        backgroundColor:backgroundColor
+//                                                                                              logoColor:logoColor];
     splashScreen.durationAnimation = 1.8;
 
     self.twitterSplashScreen = splashScreen;
