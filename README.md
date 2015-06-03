@@ -91,7 +91,7 @@ pod 'MSTwitterSplashScreen', :git => 'https://github.com/mateuszszklarek/MSTwitt
 For specific version:
 
 ```obj-c
-pod 'MSTwitterSplashScreen', :git => 'https://github.com/mateuszszklarek/MSTwitterSplashScreen', :tag => 'v1.0.4'
+pod 'MSTwitterSplashScreen', :git => 'https://github.com/mateuszszklarek/MSTwitterSplashScreen', :tag => 'v1.0.5'
 ```
 
 ##Inspired by
