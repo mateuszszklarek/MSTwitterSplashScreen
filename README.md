@@ -51,11 +51,18 @@ You need to provide 3 parameters:
 
 `logoColor`
 
-```obj-c 
-... = [[MSTwitterSplashScreen alloc] initSplashScreenWithBezierPath:bezierPath backgroundColor:backgroundColor logoColor:logoColor];
-```
+<pre><code>... = [[MSTwitterSplashScreen alloc] initSplashScreenWithBezierPath:bezierPath
+													backgroundColor:backgroundColor
+													      logoColor:logoColor];</code></pre> 
+
+
+<pre><code>... = [[MSTwitterSplashScreen alloc] initSplashScreenWithBezierPath:bezierPath
+								 backgroundWithGradientFromTopColor:topColor
+												        bottomColor:bottomColor
+												          logoColor:logoColor];</code></pre>                                                                              
 
 ### Determine duration of the animation
+
 ```obj-c 
 splashScreen.durationAnimation = 1.8f;
 ```
