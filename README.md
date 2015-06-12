@@ -11,7 +11,7 @@
 The repository allows you to achieve the effect similar to one that you’ve probably seen on Twitter App.
 
 ## Features
-* Compatible with iOS 7 & 8
+* Compatible with iOS 7, 8 & 9
 * Same size of logo among all iPhone models(4/4S,5/5S/5C,6/6+)
 * Custom background and logo color
 * Custom duration time of animation
