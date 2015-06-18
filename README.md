@@ -90,12 +90,14 @@ self.splashScreen = splashScreen;
 
 You can integrate `MSTwitterSplashScreen` with your project using Cocoapods. Add the following line to your `*.podfile`. I recommend you to use the latest version which is still being developed.
 
-For most recent or development version:
+You can install the library using CocoaPods. To do so, you will need to add one of the following lines to your Podfile:
 
 ```obj-c
-pod 'MSTwitterSplashScreen', :git => 'https://github.com/mateuszszklarek/MSTwitterSplashScreen'
+pod 'MSTwitterSplashScreen', '~> 1.0.5'
 ```
-For specific version:
+Which creates dependency for version `>= 1.0.5` and `< 1.0.6`
+
+For most recent or exact development version (not recommended on production):
 
 ```obj-c
 pod 'MSTwitterSplashScreen', :git => 'https://github.com/mateuszszklarek/MSTwitterSplashScreen', :tag => 'v1.0.5'
