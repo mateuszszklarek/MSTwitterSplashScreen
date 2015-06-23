@@ -1,6 +1,6 @@
 ## MSTwitterSplashScreen for iOS App
 
-[![Platform iOS](https://img.shields.io/badge/Platform-iOS-blue.svg)
+![Platform iOS](https://img.shields.io/badge/Platform-iOS-blue.svg)
 [![CocoaPods](https://img.shields.io/badge/CocoaPods-v1.0.6-blue.svg)](https://cocoapods.org/pods/MSTwitterSplashScreen)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mateuszszklarek/MSTwitterSplashScreen/blob/master/LICENSE)
 [![Contact](https://img.shields.io/badge/Contact-%40SzklarekMateusz-blue.svg)](https://twitter.com/SzklarekMateusz)
