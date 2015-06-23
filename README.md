@@ -1,5 +1,9 @@
 ## MSTwitterSplashScreen for iOS App
 
+[![CocoaPods](https://img.shields.io/badge/CocoaPods-v1.0.6-blue.svg)](https://cocoapods.org/pods/MSTwitterSplashScreen)
+[![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/mateuszszklarek/MSTwitterSplashScreen/blob/master/LICENSE)
+[![contact](https://img.shields.io/badge/Contact-%40SzklarekMateusz-blue.svg)](https://twitter.com/SzklarekMateusz)
+
 <img src = "Images/TwitterAnimation.gif" width = "40%" height = "40%"/>
 <img src="Images/TwitterSplashWithGradient.gif" width = "55%" height = "55%"/>
 
