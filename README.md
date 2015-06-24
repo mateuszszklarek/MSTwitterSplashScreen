@@ -103,7 +103,7 @@ Which creates dependency for version `>= 1.0.6` and `< 1.1`
 
 For most recent or exact development version (not recommended on production):
 
-pod 'MSTwitterSplashScreen', :git => 'https://github.com/mateuszszklarek/MSTwitterSplashScreen.git', :tag => 'v1.0.6'
+    pod 'MSTwitterSplashScreen', :git => 'https://github.com/mateuszszklarek/MSTwitterSplashScreen.git', :tag => 'v1.0.6'
 
 ##Inspired by
 
